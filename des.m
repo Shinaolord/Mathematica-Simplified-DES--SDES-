@@ -1,7 +1,6 @@
 (* ::Package:: *)
 
 (* ::Input:: *)
-(**)
 (*s1={{{1,0,1},{0,1,0},{0,0,1},{1,1,0},{0,1,1},{1,0,0},{1,1,1},{0,0,0}},{{0,0,1},{1,0,0},{1,1,0},{0,1,0},{0,0,0},{1,1,1},{1,0,1},{0,1,1}}}; (*First s-box*)*)
 (**)
 (**)
@@ -10,7 +9,7 @@
 (**)
 (*lexigraphical[x_List]:=Which[x== {0,0,0},1,x=={0,0,1},2,x=={0,1,0},3,x=={0,1,1},4,x=={1,0,0},5,x=={1,0,1},6,x=={1,1,0},7,x=={1,1,1},8]; (* defines a function that takes a vector x \[Element] \[DoubleStruckCapitalZ]^3 with entires Subscript[x, i] \[Element] Subscript[\[DoubleStruckCapitalZ], 2] as input, and outputs the lexigraphical equivalent. *)*)
 (**)
-(*stringtoarray[x_String]:= ToExpression[Characters[x]]; (* Turns the input 101010101001010101 into "101010101001010101", then into {"1","0",....}, then into {1,0,...} *);*)
+(*stringtoarray[x_String]:= ToExpression[Characters[x]]; (* Turns the input 101010101001010101 into "101010101001010101", then into {"1","0",....}, then into {1,0,...} *)*)
 (**)
 (*keygen[x_String,rounds_Integer]:=Flatten[ToExpression[Characters[StringRepeat[x,rounds]]]]; (*Does what stringtoarray does, in addition to generating a repeated list of the keys to allow us to find the roundkeys, garunteed to be much longer than the number of rounds asked for. Can be made more efficient *)*)
 (**)
