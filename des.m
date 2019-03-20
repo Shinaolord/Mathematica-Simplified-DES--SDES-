@@ -11,7 +11,7 @@
 (**)
 (*stringtoarray[x_String]:= ToExpression[Characters[x]]; (* Turns the input 101010101001010101 into "101010101001010101", then into {"1","0",....}, then into {1,0,...} *)*)
 (**)
-(*keygen[x_String,rounds_Integer]:=Flatten[ToExpression[Characters[StringRepeat[x,rounds]]]]; (*Does what stringtoarray does, in addition to generating a repeated list of the keys to allow us to find the roundkeys, garunteed to be much longer than the number of rounds asked for. Can be made more efficient *)*)
+(*keygen[x_String,rounds_Integer]:=Flatten[ToExpression[Characters[StringRepeat[x,rounds]]]]; (*Does what stringtoarray does, in addition to generating a repeated list of the keys to allow us to find the roundkeys, guarunteed to be much longer than the number of rounds asked for. Can be made more efficient *)*)
 (**)
 (*arraytostring[x_List]:=StringJoin[Map[ToString,x ]]; (*Reverses stringtoarray[]*)*)
 (**)
